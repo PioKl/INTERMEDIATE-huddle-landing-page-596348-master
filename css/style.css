@@ -1,0 +1,526 @@
+/*=====================
+       COLORS
+=====================*/
+/*=====================
+       Fonts
+=====================*/
+/*=========================================================================
+                                GENRERAL RULES
+===========================================================================*/
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fd;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  margin: 0;
+  color: #808d99;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+.callToAction {
+  background-color: #f7f9fd;
+  -webkit-box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
+  color: #9a52ff;
+  padding: calc(.3em + 0.3vw) calc(2.5em + 1vw);
+  font-size: calc(10px + 0.4vw);
+}
+
+.container {
+  padding: 3rem 1rem 1rem;
+}
+
+.container__inside {
+  padding: 2rem 1rem 1rem;
+}
+
+/*====================================================================================
+                                         HEADER
+======================================================================================*/
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.tryFree {
+  white-space: nowrap;
+}
+
+.logo {
+  width: calc(100px + 10vw);
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.community {
+  text-align: center;
+  font-size: calc(10px + 0.4vw);
+}
+
+.community--heading {
+  padding: 2rem 0 1rem;
+}
+
+.community--paragraph {
+  max-width: 530px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+/*=======================
+ SAME VALUES FOR BUTTONS
+=========================*/
+.getStarted,
+.subscribeButton {
+  background-color: #ff52bf;
+  color: white;
+  border-radius: 2px;
+  padding: calc(.9em + 0.3vw) calc(2.5em + 1vw);
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.tryItFreeButton {
+  display: block;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+  border-radius: 10px;
+}
+
+.tryItFreeButton:hover,
+.tryItFreeButton:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.getStarted:hover,
+.getStarted:focus,
+.subscribeButton:hover,
+.subscribeButton:focus {
+  background-color: #b80074;
+}
+
+/*====================================================================================
+                                         MAIN
+======================================================================================*/
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.mainIllustration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.illYourUsers {
+  margin: 0 auto;
+}
+
+.mainInformations {
+  text-align: center;
+}
+
+.info {
+  font-size: calc(9px + 0.4vw);
+}
+
+.infoFirst {
+  padding-top: 1rem;
+}
+
+.info-h2 {
+  padding: 2rem 0 1rem;
+}
+
+.info-p {
+  max-width: 336px;
+  margin: 0 auto;
+}
+
+.tryCard {
+  text-align: center;
+  background-color: white;
+  padding: 1.5rem 1rem;
+  font-size: calc(9px + 0.4vw);
+  max-width: 530px;
+  margin: 0 auto;
+}
+
+.tryCard--p {
+  padding: 1rem 0 2rem;
+}
+
+/*====================================================================================
+                                         Footer
+======================================================================================*/
+footer {
+  background-color: #00252e;
+}
+
+.footerPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: white;
+}
+
+.footerNavigation {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.footerLogo {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.contactListItem {
+  padding: .5rem;
+}
+
+.subscribe {
+  text-align: center;
+  font-size: calc(11px + 0.4vw);
+  padding: 1rem;
+}
+
+.subscribe--h2,
+.subscribe--p {
+  padding-bottom: 1rem;
+}
+
+.subscribe--h2 {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.subscribe--p,
+.copyright--p {
+  color: white;
+}
+
+.subscribeForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.subscribeInput {
+  padding: calc(.6em + 0.3vw) calc(2.5em + 1vw);
+  border: 1px solid white;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.subscribeButton {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.socialList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+}
+
+.socialListItem {
+  padding: 1rem;
+}
+
+.fab {
+  font-size: 1.5rem;
+}
+
+.copyRight {
+  padding-top: .2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.copyRight--p {
+  color: white;
+}
+
+.copyRight--a {
+  color: red;
+}
+
+.copyRight--a:hover,
+.copyRight--a:focus {
+  color: #f7f9fd;
+}
+
+.contactListItem a:hover,
+.contactListItem a:focus {
+  color: red;
+}
+
+.copyRight--a,
+.contactListItem a {
+  -webkit-transition: color .5s ease-out;
+  transition: color .5s ease-out;
+}
+
+.subscribe {
+  max-width: 530px;
+  margin: 0 auto;
+}
+
+/*====================================================================================
+                                    MEDIA QUERIES
+======================================================================================*/
+/*=============
+   Media 768px
+===============*/
+@media only screen and (min-device-width: 768px) {
+  img {
+    width: 80%;
+  }
+  .container {
+    padding: 4rem;
+  }
+  .community--paragraph {
+    padding-bottom: 3rem;
+  }
+}
+
+/*=============
+   Media 1224px
+===============*/
+@media only screen and (min-width: 1224px) {
+  img {
+    width: 60%;
+  }
+  .container__inside {
+    padding: 6rem 6rem 1rem;
+  }
+  .mainContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'mainIllustration mainInformations';
+    justify-items: center;
+    margin: auto;
+  }
+  .mainIllustration {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: mainIllustration;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .illYourUsers {
+    width: 100%;
+  }
+  .mainInformations {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: mainInformations;
+    text-align: left;
+    width: 56%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .info {
+    padding: 1rem;
+  }
+  .info-p {
+    max-width: 100%;
+    margin: 0;
+  }
+  .tryCard {
+    padding: 4rem .5rem;
+  }
+  .tryCard--p {
+    padding: 1rem 0 3rem;
+  }
+  .footerPanel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "footerNavigation footerNavigation footerNavigation" "socialAndCopyRight contact subscribe";
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'contactFirst contactSecond';
+    padding-top: 0;
+  }
+  .socialAndCopyRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .footerNavigation {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footerNavigation;
+    padding-bottom: 5%;
+    margin: 0;
+  }
+  .contact {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: contact;
+  }
+  .contactListFirst {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contactFirst;
+  }
+  .contactListSecond {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: contactSecond;
+  }
+  .contactListItem {
+    padding-top: 0;
+  }
+  .subscribe {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: subscribe;
+    padding-top: 0;
+  }
+  .subscribe--h2, .subscribe--p {
+    text-align: left;
+  }
+  .subscribeInput {
+    border-radius: 5px;
+    padding: calc(1em + 0.3vw) calc(2.5em + 1vw);
+  }
+  .subscribeButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .socialAndCopyRight {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: socialAndCopyRight;
+  }
+  .social {
+    grid-area: social;
+  }
+  .socialList {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-top: 0;
+  }
+  .socialListItem:first-child {
+    padding-left: 0;
+  }
+  .socialListItem {
+    padding-top: 0;
+  }
+  .copyRight {
+    grid-area: copyright;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,514 @@
+/*=====================
+       COLORS
+=====================*/
+
+//Primary
+$pink: hsl(322, 100%, 66%);
+$darkerPink: hsl(322, 100%, 36%);
+
+//Secondary
+$violet: hsl(265, 100%, 66%);
+
+//Neutral
+
+$lightGrayishBlue: hsl(214, 64%, 98%);
+$midGrayishBlue: hsl(208, 11%, 55%);
+$veryDarkCyan: hsl(192, 100%, 9%);
+
+/*=====================
+       Fonts
+=====================*/
+$openSans: 'Open Sans',
+sans-serif;
+$poppins: 'Poppins',
+sans-serif;
+
+
+/*=========================================================================
+                                GENRERAL RULES
+===========================================================================*/
+
+body {
+    //font-size: calc(10px + 0.4vw);
+    font-family: $openSans;
+    margin: 0;
+    padding: 0;
+    background-color: $lightGrayishBlue;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $poppins;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    margin: 0;
+    color: $midGrayishBlue;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+
+.callToAction {
+    // border: 1px solid black;
+    // border-radius: 1px;
+    background-color: $lightGrayishBlue;
+    -webkit-box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px grey;
+    color: $violet;
+    // padding: .5em 3.5em;
+    padding: calc(.3em + 0.3vw) calc(2.5em + 1vw);
+    font-size: calc(10px + 0.4vw);
+}
+
+
+.container {
+    padding: 3rem 1rem 1rem;
+
+    &__inside {
+        padding: 2rem 1rem 1rem;
+    }
+}
+
+/*====================================================================================
+                                         HEADER
+======================================================================================*/
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.tryFree {
+    white-space: nowrap;
+}
+
+.logo {
+    width: calc(100px + 10vw);
+}
+
+.hero {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.community {
+    text-align: center;
+    font-size: calc(10px + 0.4vw);
+
+    &--heading {
+        padding: 2rem 0 1rem;
+    }
+
+    &--paragraph {
+        max-width: 530px;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+}
+
+/*=======================
+ SAME VALUES FOR BUTTONS
+=========================*/
+.getStarted,
+.subscribeButton {
+    background-color: $pink;
+    color: white;
+    border-radius: 2px;
+    padding: calc(.9em + 0.3vw) calc(2.5em + 1vw);
+    transition: background-color 1s ease-out;
+}
+
+.tryItFreeButton {
+    display: block;
+    transition: transform 1s ease-out;
+    border-radius: 10px;
+}
+
+.tryItFreeButton:hover,
+.tryItFreeButton:focus {
+    transform: scale(1.1);
+
+}
+
+.getStarted:hover,
+.getStarted:focus,
+.subscribeButton:hover,
+.subscribeButton:focus {
+    background-color: $darkerPink;
+}
+
+
+/*====================================================================================
+                                         MAIN
+======================================================================================*/
+.mainContainer {
+    display: flex;
+    flex-flow: column;
+}
+
+.mainIllustration {
+    display: flex;
+}
+
+.illYourUsers {
+    margin: 0 auto;
+}
+
+.mainInformations {
+    text-align: center;
+}
+
+.info {
+    font-size: calc(9px + 0.4vw);
+}
+
+.infoFirst {
+    padding-top: 1rem;
+}
+
+.info-h2 {
+    padding: 2rem 0 1rem;
+}
+
+.info-p {
+    max-width: 336px;
+    margin: 0 auto;
+}
+
+.tryCard {
+    text-align: center;
+    background-color: white;
+    padding: 1.5rem 1rem;
+    font-size: calc(9px + 0.4vw);
+    max-width: 530px;
+    margin: 0 auto;
+
+    &--p {
+        padding: 1rem 0 2rem;
+    }
+}
+
+/*====================================================================================
+                                         Footer
+======================================================================================*/
+footer {
+    background-color: $veryDarkCyan;
+}
+
+.footerPanel {
+    display: flex;
+    flex-flow: column;
+    color: white;
+}
+
+.footerNavigation {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.footerLogo {
+    filter: brightness(0) invert(1);
+}
+
+.contactListItem {
+    padding: .5rem;
+}
+
+.subscribe {
+    text-align: center;
+    font-size: calc(11px + 0.4vw);
+    padding: 1rem;
+}
+
+.subscribe--h2,
+.subscribe--p {
+    padding-bottom: 1rem;
+}
+
+.subscribe--h2 {
+    font-weight: 700;
+    font-family: $openSans;
+}
+
+.subscribe--p,
+.copyright--p {
+    color: white;
+}
+
+.subscribeForm {
+    display: flex;
+    flex-flow: column;
+}
+
+.subscribeInput {
+    padding: calc(.6em + 0.3vw) calc(2.5em + 1vw);
+    border: 1px solid white;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+.subscribeButton {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.socialList {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.socialListItem {
+    padding: 1rem;
+}
+
+.fab {
+    font-size: 1.5rem;
+}
+
+.copyRight {
+    padding-top: .2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copyRight--p {
+    color: white;
+
+}
+
+.copyRight--a {
+    // text-decoration: underline;
+    color: red;
+
+}
+
+.copyRight--a:hover,
+.copyRight--a:focus {
+    color: $lightGrayishBlue;
+}
+
+.contactListItem a:hover,
+.contactListItem a:focus {
+    color: red;
+}
+
+.copyRight--a,
+.contactListItem a {
+    transition: color .5s ease-out;
+}
+
+.subscribe {
+    max-width: 530px;
+    margin: 0 auto;
+}
+
+/*====================================================================================
+                                    MEDIA QUERIES
+======================================================================================*/
+
+/*=============
+   Media 768px
+===============*/
+
+@media only screen and (min-device-width : 768px) {
+
+    img {
+        width: 80%;
+    }
+
+    .container {
+        padding: 4rem;
+    }
+
+    .community {
+
+        &--paragraph {
+            padding-bottom: 3rem;
+        }
+    }
+
+}
+
+/*=============
+   Media 1224px
+===============*/
+@media only screen and (min-width : 1224px) {
+
+    img {
+        width: 60%;
+    }
+
+    .container__inside {
+        padding: 6rem 6rem 1rem;
+    }
+
+
+    .mainContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 'mainIllustration mainInformations';
+        justify-items: center;
+        margin: auto;
+    }
+
+    .mainIllustration {
+        grid-area: mainIllustration;
+        align-self: center;
+        // display: inline;
+
+    }
+
+    .illYourUsers {
+        width: 100%;
+    }
+
+    .mainInformations {
+        grid-area: mainInformations;
+        text-align: left;
+        width: 56%;
+        align-items: start;
+    }
+
+    .info {
+        padding: 1rem;
+    }
+
+    .info-p {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .tryCard {
+        padding: 4rem .5rem;
+
+        &--p {
+            padding: 1rem 0 3rem;
+        }
+    }
+
+
+    .footerPanel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 'footerNavigation footerNavigation footerNavigation''socialAndCopyRight contact subscribe';
+        justify-content: space-between;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 'contactFirst contactSecond';
+        padding-top: 0;
+    }
+
+    .socialAndCopyRight {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .footerNavigation {
+        grid-area: footerNavigation;
+        padding-bottom: 5%;
+        margin: 0;
+    }
+
+    .contact {
+        grid-area: contact;
+    }
+
+    .contactListFirst {
+        grid-area: contactFirst;
+    }
+
+    .contactListSecond {
+        grid-area: contactSecond;
+    }
+
+    .contactListItem {
+        padding-top: 0;
+    }
+
+    .subscribe {
+        grid-area: subscribe;
+        padding-top: 0;
+
+        &--h2,
+        &--p {
+            text-align: left;
+        }
+    }
+
+    .subscribeInput {
+        border-radius: 5px;
+        padding: calc(1em + 0.3vw) calc(2.5em + 1vw);
+    }
+
+    .subscribeButton {
+        display: flex;
+        align-self: flex-end;
+    }
+
+
+    .socialAndCopyRight {
+        grid-area: socialAndCopyRight;
+    }
+
+    .social {
+        grid-area: social;
+    }
+
+    .socialList {
+        justify-content: start;
+        padding-top: 0;
+    }
+
+    .socialListItem:first-child {
+        padding-left: 0;
+    }
+
+    .socialListItem {
+        padding-top: 0;
+    }
+
+    .copyRight {
+        grid-area: copyright;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+}

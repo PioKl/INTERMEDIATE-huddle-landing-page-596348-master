@@ -1,5 +1,7 @@
 # Frontend Mentor - Huddle landing page with coded decorative elements
 
+https://piokl.github.io/INTERMEDIATE-huddle-landing-page-596348-master/
+
 ![Design preview for the Huddle landing page with coded decorative elements challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
